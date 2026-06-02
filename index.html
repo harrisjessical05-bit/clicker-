@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Clicker Game</h1>
+            <div class="stats">
+                <div class="stat">
+                    <span class="label">Score:</span>
+                    <span class="value" id="score">0</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Per Click:</span>
+                    <span class="value" id="perClick">1</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Per Second:</span>
+                    <span class="value" id="perSecond">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="clicker-section">
+                <button class="click-button" id="clickButton">
+                    <span>CLICK ME!</span>
+                </button>
+                <div class="combo-meter">
+                    <div class="combo-fill" id="comboFill"></div>
+                </div>
+                <p class="combo-text" id="comboText">Combo: x1</p>
+            </div>
+
+            <div class="upgrades-section">
+                <h2>Upgrades & Bonuses</h2>
+                <div class="upgrades-grid" id="upgradesGrid">
+                    <!-- Upgrades will be generated here -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <button class="reset-button" id="resetButton">Reset Game</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
